@@ -1,0 +1,35 @@
+<header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="#">Admin panel</a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/admin">All products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin/users">All Users</a>
+                        </li>
+                        
+                    </ul>
+                    <form class="d-flex me-5" action="/admin/products-get" method="get">
+                        <input class="form-control me-2" type="search" name="searchP" placeholder="Search category" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+
+                    <form class="d-flex me-5" action="/admin/users-get" method="get">
+                        <input class="form-control me-2" type="search" name="search" placeholder="Search user" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                        <a class="btn btn-outline-danger" href="/admin/logout">Logout</a>
+                </div>
+            </div>
+        </nav>
+    </header>

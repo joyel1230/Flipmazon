@@ -1,0 +1,47 @@
+{{!-- <section>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-3">
+                <h2 class="text-centre">Add Products</h2>
+                <form action="">
+                    <label for="">Name</label>
+                    <input type="text" name="Name" class="form-conntrol">
+                    <label for="">Category</label>
+                    <input type="text" name="Category" class="form-conntrol">
+                    <label for="">Price</label>
+                    <input type="text" name="Price" class="form-conntrol">
+                    <label for="">Description</label>
+                    <input type="text" name="Description" class="form-conntrol">
+                    <label for="">Image</label>
+                    <input type="file" class="form-conntrol">
+                    <button type="submit" class="btn btn-success mt-4">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+ --}}
+
+<section>
+    <div class="m-5 p-5 pt-0 mt-0">
+        <h2 class="text-center">Add Product</h2>
+    <form class="row g-3" action="/admin/add-product" method="post" enctype="multipart/form-data">
+  <div class="col-md-6">
+    <label for="" class="form-label">Name</label>
+    <input type="text" name="name" class="form-control" required>
+    <label for="" class="form-label">Category</label>
+    <input type="text" name="category" class="form-control" >
+    <label for="" class="form-label">Price</label>
+    <input type="text" name="price" class="form-control">
+    <label for="" class="form-label">Description</label>
+    <input type="text" name="description" class="form-control">
+    <label for="" class="form-label">Image</label>
+    <input type="file" name="image" class="form-control" required>
+  </div>
+  
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+</div>
+</section>
